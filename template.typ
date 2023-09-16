@@ -43,7 +43,7 @@
 	doc
 }
 
-#let slide(title: "Chapter", content) = locate(loc => {
+#let slide(title: "", content) = locate(loc => {
 	// Header with slide title.
 	let header = {
 		let headers = query(selector(heading).before(loc), loc)
@@ -54,9 +54,13 @@
 				text(size: 30pt, title)
 			} else {
 				let section = headers.last().body
-				text(size: 15pt, section)
-				linebreak()
-				text(size: 25pt, title)
+				if title == "" {
+					text(size: 30pt, section)
+				} else {
+					text(size: 15pt, section)
+					linebreak()
+					text(size: 25pt, title)
+				}
 			}
 		])
 	}
