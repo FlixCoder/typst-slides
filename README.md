@@ -1,2 +1,3 @@
 # typst-slides
-Typst beamer/slides template
+
+Typst beamer/slides template.
