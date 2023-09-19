@@ -25,6 +25,7 @@
 	show heading: title => {
 		pagebreak(weak: true)
 		rect(width: 100%, height: 100%, fill: theme_background, text(fill: theme_text, title))
+		counter(page).update(x => x - 1)
 		pagebreak(weak: true)
 	}
 	
@@ -38,6 +39,7 @@
 		text(size: 25pt, author)
 	})
 	pagebreak(weak: true)
+	counter(page).update(1)
 	
 	// Actual content.
 	doc
