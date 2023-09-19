@@ -7,3 +7,4 @@
 #let presentation_subtitle = "Using Typst and this template"
 
 #let author = "FlixCoder"
+#let date = "2023-09-19"

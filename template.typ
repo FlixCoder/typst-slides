@@ -37,6 +37,8 @@
 		text(size: 30pt, presentation_subtitle)
 		v(2em)
 		text(size: 25pt, author)
+		linebreak()
+		text(size: 15pt, date)
 	})
 	pagebreak(weak: true)
 	counter(page).update(1)
@@ -74,7 +76,7 @@
 		#set text(12pt)
 		#presentation_title \
 		#set text(10pt)
-		#author
+		#author -- #date
 	], [
 		// Page counter.
 		#rect(
