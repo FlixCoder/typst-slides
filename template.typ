@@ -24,22 +24,30 @@
 	
 	show heading: title => {
 		pagebreak(weak: true)
-		rect(width: 100%, height: 100%, fill: theme_background, text(fill: theme_text, title))
+		rect(
+			width: 100%, height: 100%,
+			fill: gradient.radial(theme_background.lighten(15%), theme_background.darken(15%)),
+			text(fill: theme_text, title)
+		)
 		counter(page).update(x => x - 1)
 		pagebreak(weak: true)
 	}
 	
 	// Title page.
-	rect(width: 100%, height: 100%, fill: theme_background, {
-		set text(fill: theme_text)
-		text(size: 50pt, weight: "bold", presentation_title)
-		linebreak()
-		text(size: 30pt, presentation_subtitle)
-		v(2em)
-		text(size: 25pt, author)
-		linebreak()
-		text(size: 15pt, date)
-	})
+	rect(
+		width: 100%, height: 100%,
+		fill: gradient.radial(theme_background.lighten(15%), theme_background.darken(15%)),
+		{
+			set text(fill: theme_text)
+			text(size: 50pt, weight: "bold", presentation_title)
+			linebreak()
+			text(size: 30pt, presentation_subtitle)
+			v(2em)
+			text(size: 25pt, author)
+			linebreak()
+			text(size: 15pt, date)
+		}
+	)
 	pagebreak(weak: true)
 	counter(page).update(1)
 	

@@ -1,5 +1,5 @@
 #let beamer_format = (16, 9)
-#let theme_background = blue.darken(25%)
+#let theme_background = blue.darken(30%)
 #let theme_text = white
 #let font = "Open Sans"
 
