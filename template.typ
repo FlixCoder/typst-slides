@@ -55,10 +55,10 @@
 	doc
 }
 
-#let slide(title: "", content) = locate(loc => {
+#let slide(title: "", content) = {
 	// Header with slide title.
-	let header = {
-		let headers = query(selector(heading).before(loc), loc)
+	let header = context {
+		let headers = query(selector(heading).before(here()))
 		set align(left + top)
 		set text(fill: theme_text, weight: "bold")
 		rect(width: 100%, fill: theme_background, pad(x: 10pt, y: 10pt)[
@@ -93,7 +93,7 @@
 			fill: theme_background,
 			align(
 				center + horizon,
-				text(20pt, fill: theme_text, counter(page).display())
+				text(20pt, fill: theme_text, context counter(page).display())
 			)
 		)
 	])
@@ -108,4 +108,4 @@
 		footer
 	})
 	pagebreak(weak: true)
-})
+}
