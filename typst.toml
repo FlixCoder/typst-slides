@@ -1,0 +1,17 @@
+[package]
+name = "basic-slides"
+version = "0.1.0"
+entrypoint = "template.typ"
+authors = ["FlixCoder"]
+license = "MIT"
+description = "Basic slides template."
+repository = "https://github.com/FlixCoder/typst-slides"
+keywords = ["slides", "presentation"]
+categories = ["presentation"]
+compiler = "0.11.0"
+exclude = ["slides.pdf", "images/*"]
+
+[template]
+path = "."
+entrypoint = "slides.typ"
+thumbnail = "images/screenshot.png"
