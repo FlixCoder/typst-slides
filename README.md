@@ -10,4 +10,4 @@ Take a look at [`slides.pdf`](https://github.com/FlixCoder/typst-slides/blob/mai
 
 ## Typst version
 
-Made with Typst v0.8.0, compiles with v0.11.0 - v0.12.0, it is unclear whether future versions will break something.
+Made with Typst v0.8.0, compiles with v0.11.0 - v0.13.1, it is unclear whether future versions will break something.
